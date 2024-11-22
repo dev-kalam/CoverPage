@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Template</title>
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 10mm;
+            }
+            @media print {
+    .save-button {
+        display: none;
+    }
+}
+
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            input, textarea {
+                border: none;
+                background: transparent;
+                font-family: inherit;
+                font-size: inherit;
+                font-style: inherit;
+            }
+            input:focus, textarea:focus {
+                outline: none;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .image {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .image img {
+            width: 400px;
+            height: 100px;
+        }
+        .title {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .title h1 {
+            font-size: 28px;
+            padding-left: 30px;
+        }
+        .subject {
+            margin: 20px 50px;
+            font-size: 18px;
+            padding-bottom: 50px;
+            padding-left: 0px;
+            font-style: italic;
+        }
+        .submit h2,
+        .student h2 {
+            margin-left: 30px;
+            font-size: 20px;
+        }
+        .teacher,
+        .student p {
+            margin-left: 80px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .date {
+            padding-top: 25px;
+            padding-left: 50px;
+            margin-top: 50px;
+            font-size: 18px;
+        }
+        .main {
+            margin-left: 30px;
+            padding-left: 30px;
+        }
+        .student {
+            padding-top: 10px;
+        }
+        input[type="text"], textarea {
+            border: none;
+            font-family: inherit;
+            font-size: inherit;
+            font-style: inherit;
+            width: auto;
+        }
+        input[type="text"] {
+            display: inline;
+            width: auto;
+        }
+        textarea {
+            resize: none;
+        }
+        .save-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .save-button button {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .save-button button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src=https://raw.githubusercontent.com/dev-kalam/images/main/logo1.png
+ alt="University Logo">
+    </div>
+    <div class="title">
+        <h1>Assignment No-<input type="text" placeholder="xx" style="width: 50px; font-size: inherit; text-align: left; border: none; outline: none;"></h1>
+    </div>
+    
+    <div class="subject">
+        <p>Subject Name: <input type="text" placeholder="Subject name"></p>
+        <p>Subject Code: <input type="text" placeholder="Subject code"></p>
+    </div>
+    <div class="main">
+        <div class="submit">
+            <h2>Submitted to:</h2>
+            <p class="teacher">
+                <input type="text" placeholder="teacher's name"> <br>
+                <input type="text" placeholder="Designation"> <br>
+                Dept. of <input type="text" placeholder="xxxxxxxxxxxx" style="min-width: 350px"> <br>
+                Metropolitan University, Sylhet
+            </p>
+        </div>
+        <div class="student">
+            <h2>Submitted by:</h2>
+            <p>
+                <input type="text" placeholder="Your name"> <br>
+                ID: <input type="text" placeholder="xxx-xxx-xxx"> <br>
+                Batch: <input type="text" placeholder="xx(x)"> <br>
+                Dept. of <input type="text" placeholder="xxxxxxxxxxxxxxxxxxxxx" style="min-width: 350px;"> <br>
+                Metropolitan University, Sylhet
+            </p>
+        </div>
+    </div>
+    <div class="date">
+        <p>Submission Date: <input type="text" placeholder="xx-xx-xxxx"></p>
+    </div>
+    <div class="save-button">
+        <button onclick="savePage()">Save</button>
+    </div>
+    <script>
+        function savePage() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
