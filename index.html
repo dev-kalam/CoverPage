@@ -140,6 +140,9 @@
             padding: 5px;
             border: none;
             width: auto;
+            background-color: transparent;
+ border: none;
+  color: inherit;
         }
 
         input[type="date"]:focus {
@@ -227,11 +230,9 @@
         @media print {
     input[type="date"]::-webkit-calendar-picker-indicator {
         display: none;
-        background-color: transparent;
-        border: none;
-        color: inherit;
-    }
+       }
 }
+        
 
     </style>
 </head>
@@ -244,8 +245,7 @@
     </div>
     
     <div class="subject">
-        <p>Assignment on <input type="text" placeholder="topic name"></p>
-        <p>Course Name: <input type="text" placeholder="Course name"></p>
+        <p>Assignment on <input type="text" placeholder="topic name"></       <p>Course Name: <input type="text" placeholder="Course name"></p>
         <p>Course Code: <input type="text" placeholder="Course code"></p>
     </div>
     <div class="main">
