@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment Template</title>
+    
     <style>
         @media print {
             @page {
@@ -15,6 +15,7 @@
         display: none;
     }
 }
+
 
             body {
                 margin: 0;
@@ -58,15 +59,20 @@
             padding-bottom: 50px;
             padding-left: 0px;
             font-style: italic;
+            line-height: 1px;
+        }
+        .subject p{
+            margin-bottom: 10px;
+            margin: 5px 0;
         }
         .submit h2,
         .student h2 {
-            margin-left: 30px;
+            margin-left: 0px;
             font-size: 20px;
         }
         .teacher,
         .student p {
-            margin-left: 80px;
+            margin-left: 120px;
             font-size: 18px;
             line-height: 1.5;
         }
@@ -113,6 +119,23 @@
         .save-button button:hover {
             background-color: #0056b3;
         }
+        
+        input[type="date"] {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            padding: 5px;
+            border: none;
+            
+            width: auto;
+        }
+
+        input[type="date"]:focus {
+            outline: none;
+            border-color: #007BFF;
+        }
+
+
+        
     </style>
 </head>
 <body>
@@ -125,13 +148,13 @@
     </div>
     
     <div class="subject">
-        <p>Assignment on <input type="text" placeholder="topic name" style="min-width:400px"></p>
-        <p>Course Name: <input type="text" placeholder="Subject name"></p>
-        <p>Course Code: <input type="text" placeholder="Subject code"></p>
+        <p>Assignment on <input type="text" placeholder="topic name" style="min-width:400px;"></p>
+        <p>Course Name: <input type="text" placeholder="Course name"></p>
+        <p>Course Code: <input type="text" placeholder="Course code"></p>
     </div>
     <div class="main">
         <div class="submit">
-            <h2>Submitted to:</h2>
+            <h2>Submitted to</h2>
             <p class="teacher">
                 <input type="text" placeholder="teacher's name"> <br>
                 <input type="text" placeholder="Designation"> <br>
@@ -140,7 +163,7 @@
             </p>
         </div>
         <div class="student">
-            <h2>Submitted by:</h2>
+            <h2>Submitted by</h2>
             <p>
                 <input type="text" placeholder="Your name"> <br>
                 ID: <input type="text" placeholder="xxx-xxx-xxx"> <br>
@@ -151,10 +174,12 @@
         </div>
     </div>
     <div class="date">
-        <p>Submission Date: <input type="text" placeholder="xx-xx-xxxx"></p>
+        <p>Submission Date: <input type="date" id="submission-date"></p>
     </div>
+    
+    
     <div class="save-button">
-        <button onclick="savePage()">Save</button>
+        <button onclick="savePage()">PRINT</button>
     </div>
     <script>
         function savePage() {
