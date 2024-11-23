@@ -273,7 +273,7 @@
         </div>
     </div>
     <div class="date">
-    <p>Submission Date: <input type="date" style="border: none; outline: none min-width: 50px;"></p>
+    <p>Submission Date: <input type="date" id=”dateInput” style="border: none; outline: none min-width: 50px;"></p>
 </div>
 
     
@@ -284,6 +284,16 @@
         function savePage() {
             window.print();
         }
+        function hideDateInputOnPrint() {
+            const dateInput = document.getElementById("dateInput");
+            dateInput.style.display = "none";
+        }
+
+        window.addEventListener('beforeprint', hideDateInputOnPrint);
+        window.addEventListener('afterprint', () => {
+            const dateInput = document.getElementById("dateInput");
+            dateInput.style.display = '';
+        });
     </script>
 </body>
 </html>
