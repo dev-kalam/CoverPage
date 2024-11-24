@@ -3,302 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Assignment Input Page</title>
+   
     <style>
-        @media print {
-            @page {
-                size: A4;
-                margin: 10mm;
-            }
-            .save-button {
-                display: none;
-            }
-            body {
-                margin: 0;
-                font-family: Arial, sans-serif;
-            }
-            input, textarea {
-                border: none;
-                background: transparent;
-                font-family: inherit;
-                font-size: inherit;
-                font-style: inherit;
-            }
-            input:focus, textarea:focus {
-                outline: none;
-            }
-           .date {
-               min-width: 100px;
-               background-color: white;
-               
-           }
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .image {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .image img {
-            width: 400px;
-            height: 100px;
-        }
-
-        .title {
-            text-align: center;
-            margin: 30px 0;
-        }
-
-        .title h1 {
-            font-size: 28px;
-            padding-left: 30px;
-        }
-
-        .subject {
-            margin: 20px 50px;
-            font-size: 18px;
-            padding-bottom: 50px;
-            padding-left: 0px;
-            font-style: italic;
-            line-height: 1px;
-        }
-
-        .subject p {
-            margin-bottom: 10px;
-            margin: 20px 0;
-        }
-
-        .submit h2,
-        .student h2 {
-            margin-left: 0px;
-            font-size: 20px;
-        }
-
-        .teacher,
-        .student p {
-            margin-left: 120px;
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-        .date {
-            padding-top: 25px;
-            padding-left: 50px;
-            margin-top: 50px;
-            font-size: 18px;
-        }
-
-        .main {
-            margin-left: 30px;
-            padding-left: 30px;
-        }
-
-        .student {
-            padding-top: 10px;
-        }
-
-        input[type="text"], textarea {
-            border: none;
-            font-family: inherit;
-            font-size: inherit;
-            font-style: inherit;
-            width: auto;
-        }
-
-        input[type="text"] {
-            display: inline;
-            width: auto;
-        }
-
-        textarea {
-            resize: none;
-        }
-
-        .save-button {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .save-button button {
-            font-size: 16px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .save-button button:hover {
-            background-color: #0056b3;
-        }
-
-        input[type="date"] {
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            padding: 5px;
-            border: none;
-            width: auto;
-            background-color: transparent;
- border: none;
-  color: inherit;
-        }
-
-        input[type="date"]:focus {
-            outline: none;
-            border-color: #007BFF;
-        }
-
-        @media screen and (max-width: 768px) {
-            .title h1 {
-                font-size: 24px;
-            }
-
-            .subject p,
-            .teacher p,
-            .student p {
-                font-size: 16px;
-            }
-
-            .save-button button {
-                font-size: 14px;
-                padding: 8px 16px;
-            }
-
-            .image img {
-                width: 250px;
-                height: 60px;
-            }
-
-            .subject {
-                margin: 20px 20px;
-            }
-
-            .main {
-                margin-left: 10px;
-                padding-left: 10px;
-            }
-
-            .teacher,
-            .student p {
-                margin-left: 50px;
-                font-size: 16px;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            .title h1 {
-                font-size: 20px;
-            }
-
-            .subject p,
-            .teacher p,
-            .student p {
-                font-size: 14px;
-            }
-
-            .save-button button {
-                font-size: 12px;
-                padding: 6px 12px;
-            }
-
-            .image img {
-                width: 200px;
-                height: 50px;
-            }
-
-            .subject {
-                margin: 10px 10px;
-            }
-
-            .main {
-                margin-left: 5px;
-                padding-left: 5px;
-            }
-
-            .teacher,
-            .student p {
-                margin-left: 30px;
-            }
-        }
-        @media print {
-            .subject p {
-                margin: 5px 0;
-            }
-        }
-        @media print {
-    input[type="date"]::-webkit-calendar-picker-indicator {
-        display: none;
-        color: inherit;
-        
-       }
+      
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; 
+    color: #333; 
+    border-radius: 5px;
+    background-color: #143c68;
+    background-image: url(https://raw.githubusercontent.com/dev-kalam/images/main/1.jpg);
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-start;
 }
-        
+h1 {
+    text-align: center;
+    
+    color: #639edd; 
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    display: inline-block;
+    padding-bottom: 10px;
+    
+}
+.heading {
+  text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e2124; 
+    margin-bottom: 5px;
+
+}
+
+input, textarea, button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaacad;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease;
+    background-color: #94a3ac00;
+    
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); 
+    outline: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-2px); 
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form {
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 20px;
+    box-shadow: 0 6px 10px rgba(23, 21, 31, 0.685); 
+}
+
+input[type="date"] {
+    color: #333;
+    background-color: #f9f9f9 transparent;
+}
+
+input[type="date"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(55, 74, 94, 0.3);
+}
+select {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #297da3;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #36617e00;
+    cursor: pointer;
+    appearance: none; 
+}
+
+select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+input::placeholder {
+    color: #363535; 
+    opacity: 1; 
+}
+
+
 
     </style>
 </head>
 <body>
-    <div class="image">
-        <img src="https://raw.githubusercontent.com/dev-kalam/images/main/logo1.png" alt="University Logo">
-    </div>
-    <div class="title">
-        <h1>Assignment No-<input type="text" placeholder="xx" style="width: 50px; font-size: inherit; text-align: left; border: none; outline: none;"></h1>
+    <h1 class="heading"> Cover Page Input</h1>
+    <form id="assignmentForm">
+        <div class="form-group">
+            <label for="assignmentNo" style="width: 500px;">Assignment Number:</label>
+            <input type="text" id="assignmentNo" placeholder="e.g., 01">
+        </div>
+        <div class="form-group">
+            <label for="topic">Topic Name:</label>
+            <input type="text" id="topic" placeholder="e.g., topic name">
+        </div>
+        <div class="form-group">
+          <label for="courseName">Course Name:</label>
+          <input type="text" id="courseName" placeholder="e.g., Data Structure">
+          </div>
+      
+        <div class="form-group">
+            <label for="courseCode">Course Code:</label>
+            <input type="text" id="courseCode" placeholder="e.g., CSE101">
+        </div>
+        <div class="form-group">
+            <label for="teacherName">Teacher's Name:</label>
+            <input type="text" id="teacherName" placeholder="e.g., Teacher name">
+        </div>
+        <div class="form-group">
+            <label for="designation">Designation:</label>
+            <input type="text" id="designation" placeholder="e.g., Lecturer">
+        </div>
+        <div class="form-group">
+            <label for="departmentTeacher">Teacher's Department:</label>
+            <select id="departmentTeacher">
+              <option value="" disabled selected>Select department</option>
+              <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+              <option value="Electrical & Electronic Engineering">Electrical & Electronic Engineering</option>
+              <option value="Software Engineering">Software Engineering</option>
+              <option value="Economics">Civil Engineering</option>
+              <option value="Law & justice ">Law & justice</option>
+              <option value="Business Administration">Business Administration</option>
+              <option value="English">English</option>
+          </select>
+        </div>
+        <div class="form-group">
+            <label for="studentName">Student's Name:</label>
+            <input type="text" id="studentName" placeholder="e.g., Mohammad Abul kalam">
+        </div>
+        <div class="form-group">
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" placeholder="e.g., XXX-XXX-XXX">
+        </div>
+        <div class="form-group">
+            <label for="batch">Batch:</label>
+            <input type="text" id="batch" placeholder="e.g., 59">
+        </div>
+        <div class="form-group">
+          <label for="section">Section:</label>
+          <input type="text" id="section" placeholder="e.g., J">
+      </div>
+      <div class="form-group">
+        <label for="departmentStudent">Student's Department:</label>
+        <select id="departmentStudent">
+          <option value="" disabled selected>Select department</option>
+          <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+          <option value="Electrical & Electronic Engineering">Electrical & Electronic Engineering</option>
+          <option value="Software Engineering">Software Engineering</option>
+          <option value="Economics">Civil Engineering</option>
+          <option value="Law & justice ">Law & justice</option>
+          <option value="Business Administration">Business Administration</option>
+          <option value="English">English</option>
+        </select>
     </div>
     
-    <div class="subject">
-        <p>Assignment on <input type="text" placeholder="topic name"></p>
-        <p>Course Name: <input type="text" placeholder="Course name"></p>
-        <p>Course Code: <input type="text" placeholder="Course code"></p>
-    </div>
-    <div class="main">
-        <div class="submit">
-            <h2>Submitted to</h2>
-            <p class="teacher">
-                <input type="text" placeholder="teacher's name"> <br>
-                <input type="text" placeholder="Designation"> <br>
-                Dept. of <input type="text" placeholder="xxxxxxxxxxxx" style="min-width: 350px"> <br>
-                Metropolitan University, Sylhet
-            </p>
+        <div class="form-group">
+            <label for="submissionDate">Submission Date:</label>
+            <input type="date" id="submissionDate">
         </div>
-        <div class="student">
-            <h2>Submitted by</h2>
-            <p>
-                <input type="text" placeholder="Your name"> <br>
-                ID: <input type="text" placeholder="xxx-xxx-xxx"> <br>
-                Batch: <input type="text" placeholder="xx(x)"> <br>
-                Dept. of <input type="text" placeholder="xxxxxxxxxxxxxxxxxxxxx" style="min-width: 350px;"> <br>
-                Metropolitan University, Sylhet
-            </p>
-        </div>
-    </div>
-    <div class="date">
-    <p>Submission Date: <input type="date" id=”dateInput” style="border: none; outline: none min-width: 50px;"></p>
-</div>
+        <button type="button" onclick="generateCoverPage()">Generate Cover Page</button>
+    </form>
 
-    
-    <div class="save-button">
-        <button onclick="savePage()">PRINT</button>
-    </div>
     <script>
-        function savePage() {
-            window.print();
-        }
-        function hideDateInputOnPrint() {
-            const dateInput = document.getElementById("dateInput");
-            dateInput.style.display = "none";
-        }
+        function generateCoverPage() {
+            const formValues = {
+                assignmentNo: document.getElementById('assignmentNo').value,
+                topic: document.getElementById('topic').value,
+                courseName: document.getElementById('courseName').value,
+                courseCode: document.getElementById('courseCode').value,
+                teacherName: document.getElementById('teacherName').value,
+                designation: document.getElementById('designation').value,
+                departmentTeacher: document.getElementById('departmentTeacher').value,
+                studentName: document.getElementById('studentName').value,
+                studentId: document.getElementById('studentId').value,
+                batch: document.getElementById('batch').value,
+                section: document.getElementById('section').value,
+                departmentStudent: document.getElementById('departmentStudent').value,
+                submissionDate: document.getElementById('submissionDate').value,
+            };
 
-        window.addEventListener('beforeprint', hideDateInputOnPrint);
-        window.addEventListener('afterprint', () => {
-            const dateInput = document.getElementById("dateInput");
-            dateInput.style.display = '';
-        });
+            const queryString = new URLSearchParams(formValues).toString();
+            window.location.href = `cover-page.html?${queryString}`;
+        }
     </script>
 </body>
 </html>
